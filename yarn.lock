@@ -1370,6 +1370,14 @@ module-logger@DavidBabel/module-logger:
     winston "^2.4.0"
     winston-papertrail "^1.0.5"
 
+module-logger@DavidBabel/module-logger#1.1.0:
+  version "1.1.0"
+  resolved "https://codeload.github.com/DavidBabel/module-logger/tar.gz/591669f28fe689310a64a17efdd4d9e3178d432a"
+  dependencies:
+    colors "^1.1.2"
+    winston "^2.4.0"
+    winston-papertrail "^1.0.5"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
