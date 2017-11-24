@@ -20,73 +20,25 @@ GRAPHITE_PREFIX
 GRAPHITE_METRIC_INTERVAL
 ```
 
-## API
+## Usage
 
-Here is the API
+How to use the Metric Handler. You can enable it for specifics endpoints
 
-```
-/**
- * Create an histogram object
- *
- * Would be like:
- *  - /v => Histogram
- *  - /c => Histogram
- *
- * @param {Array<string>} paths
- * @returns {Object}
- */
-createHistogramObject(paths: Array<string>)
+```javascript
+import {createMetricHandlerFor} from 'module-graphite';
 
-/**
- * Sanitize a path
- *
- * @param {string} path
- * @returns {string}
- */
-sanitizePath(path: string)
+const app = express();
 
-/**
- * Format a number
- *
- * @param {number} n
- * @returns {number}
- */
-formatNumber(n: number)
+app.use(
+  createMetricHandlerFor(
+    '/endpoint1',
+    '/endpoint2'
+  )
+);
 
-/**
- * Create a metric object thant can be send to Graphite
- *
- * @param {Histogram} histogram
- * @param {string} path
- * @param {string} prefix
- * @returns {Object}
- */
-createMetricObject(histogram: Histogram, path: string, prefix: string = '')
+app.use('/', controllers);
 
-/**
- * Create an error object that can be send to Graphite
- *
- * @param {Counter} errorCount
- * @param {string} prefix
- * @returns {Object}
- */
-createErrorObject(errorCount: Counter, prefix: string = '')
-
-/**
- * Mark a Request/Response object
- *
- * @param {$Request} req
- * @param {$Response} res
- */
-markResponse(req: Object, res: Object)
-
-/**
- * Start metric sending loop
- *
- * @param {Object} histograms
- * @param {Counter} errorCount
- */
-startMetricInterval(histograms: Object, errorCount: Counter)
+app.listen(3000);
 ```
 
 # Work on it
