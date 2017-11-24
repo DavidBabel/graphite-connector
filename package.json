@@ -1,6 +1,6 @@
 {
   "name": "module-graphite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "repository": "git@github.com:DavidBabel/module-graphite.git",
   "author": "David Babel <david.babel@ogury.co>",
@@ -14,6 +14,7 @@
     "graphite": "^0.0.7",
     "measured": "^1.1.0",
     "module-logger": "DavidBabel/module-logger",
+    "on-finished": "^2.3.0",
     "performance-now": "^2.1.0"
   },
   "devDependencies": {
