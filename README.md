@@ -25,7 +25,7 @@ GRAPHITE_METRIC_INTERVAL
 How to use the Metric Handler. You can enable it for specifics endpoints
 
 ```javascript
-import {createMetricHandlerFor} from 'module-graphite';
+import createMetricHandlerFor from 'module-graphite';
 
 const app = express();
 
