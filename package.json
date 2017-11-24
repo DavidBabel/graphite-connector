@@ -1,6 +1,6 @@
 {
   "name": "module-graphite",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "repository": "git@github.com:DavidBabel/module-graphite.git",
   "author": "David Babel <david.babel@ogury.co>",
