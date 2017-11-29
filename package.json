@@ -13,7 +13,7 @@
   "dependencies": {
     "graphite": "^0.0.7",
     "measured": "^1.1.0",
-    "logger-helper": "DavidBabel/logger-helper#1.1.0",
+    "logger-helper": "DavidBabel/logger-helper#2.0.0",
     "on-finished": "^2.3.0",
     "performance-now": "^2.1.0"
   },
