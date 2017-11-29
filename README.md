@@ -1,4 +1,4 @@
-# Module Graphite
+# Graphite connector
 
 This module is used to send metrics in graphite
 
@@ -7,7 +7,7 @@ This module is used to send metrics in graphite
 To install it in your project, think to fix the version using this kind of command :
 
 ```
-yarn add Ogury/module-graphite#v1.X.X
+yarn add Ogury/graphite-connector#v1.X.X
 ```
 
 ## Requirements
@@ -25,7 +25,7 @@ GRAPHITE_METRIC_INTERVAL
 How to use the Metric Handler. You can enable it for specifics endpoints
 
 ```javascript
-import createMetricHandlerFor from 'module-graphite';
+import createMetricHandlerFor from 'graphite-connector';
 
 const app = express();
 
